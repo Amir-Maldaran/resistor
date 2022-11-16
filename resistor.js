@@ -33,7 +33,7 @@ let test = $.getElementById("test");
 
 inputResistor.addEventListener("keydown", (event) => {
 
-    test.innerHTML = event.key + "." + inputResistor.value.length + "." +maxLength;
+    test.innerHTML = event.keyCode + "." + inputResistor.value.length + "." +maxLength;
     if (!(event.key == "Backspace" || (event.key >= 0 && inputResistor.value.length < maxLength)))
     {
         event.preventDefault();
