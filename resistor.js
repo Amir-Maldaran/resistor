@@ -30,7 +30,7 @@ let buttoncolor = $.querySelectorAll(".button");
 
 
 
-inputResistor.addEventListener("keyup", event => {
+inputResistor.addEventListener("keypress", event => {
 
     if (event.key == "Backspace") {
         inputResistorValue = inputResistorValue.slice(0, -1);
