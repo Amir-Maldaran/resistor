@@ -44,9 +44,10 @@ inputResistor.addEventListener("keydown", event => {
         event.preventDefault();
         return;
     }
-    setColorResistor();
-        alert("no")
+    alert("no")
 
+    setColorResistor();
+        
 
 });
 
