@@ -27,12 +27,13 @@ let maxLength = 8;
 
 let inputResistorValue = "";
 let buttoncolor = $.querySelectorAll(".button");
+let test = $.getElementById("test");
 
 
 
 inputResistor.addEventListener("keydown", (event) => {
 
-    console.log(inputResistor.value.length);
+    test.innerHTML = event.key + "." + inputResistor.value.length + "." +maxLength;
     if (!(event.key == "Backspace" || (event.key >= 0 && inputResistor.value.length < maxLength)))
     {
         event.preventDefault();
