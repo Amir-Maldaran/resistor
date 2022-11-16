@@ -35,13 +35,16 @@ inputResistor.addEventListener("keydown", event => {
 
     if (event.key == "Backspace") {
         inputResistorValue = inputResistorValue.slice(0, -1);
+        alert("1")
 
     } else if (inputResistorValue.length < maxLength && event.key >= 0) {
 
         inputResistorValue += event.key;
+        alert("2")
 
     } else {
         event.preventDefault();
+        alert("3")
         return;
     }
     alert("no")
