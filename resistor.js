@@ -31,7 +31,7 @@ let test = $.getElementById("test");
 
 
 
-inputResistor.addEventListener("keydown", (event) => {
+inputResistor.addEventListener("keypress", (event) => {
 
     test.innerHTML = event.keyCode + "." + inputResistor.value.length + "." +maxLength;
     if (!(event.key == "Backspace" || (event.key >= 0 && inputResistor.value.length < maxLength)))
